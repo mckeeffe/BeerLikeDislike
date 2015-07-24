@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:background="@drawable/main_background"
+    android:nestedScrollingEnabled="false"
+    android:orientation="vertical"
+    android:overScrollMode="always"
+    tools:context="com.eugene.beerlikedislike.MainActivity" >
+
+    <ImageView
+        android:id="@+id/image_header"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/like_or_dislike_1" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+                        
+		<android.support.v4.view.ViewPager
+		    xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:id="@+id/view_pager"
+		    android:layout_width="300dp"
+		    android:layout_height="220dp"
+		    android:layout_marginLeft="30dp" />
+
+			<!-- android:layout_weight="1" -->
+		
+		<ImageView
+		    android:id="@+id/like_dislike"
+		    android:layout_width="wrap_content"
+		    android:layout_height="85dp"
+		    android:layout_gravity="center_vertical"
+		    android:layout_marginLeft="-330dp"
+		    android:src="@drawable/image_like_dislike" />
+		
+		</TableRow>
+    </TableLayout>
+	
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp" >
+
+        <ImageButton
+            android:id="@+id/Like_Button"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_gravity="left"
+            android:background="@null"
+            android:src="@drawable/button_dislike" />
+
+        <ImageButton
+            android:id="@+id/Dislike_Button"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:background="@null"
+            android:src="@drawable/button_like" />
+
+    </LinearLayout>
+    
+		<ImageButton
+		    android:id="@+id/View_Liked_Button"
+		    android:layout_width="115dp"
+		    android:layout_height="115dp"
+		    android:layout_gravity="center_horizontal"
+		    android:background="@null"
+		    android:src="@drawable/liked_list_images" />
+	
+</LinearLayout>
